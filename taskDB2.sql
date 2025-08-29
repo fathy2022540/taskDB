@@ -1,7 +1,7 @@
 -- 1-Create a table named "Employees" with columns for ID (integer), Name (varchar), and Salary (decimal).
 create table Employees
 (
-ID int primary key,
+ID int ,
 Name varchar(50),
 salary decimal
 )
@@ -70,3 +70,4 @@ transfer dpo.Orders
 
 -- 13-Rename the "Orders" table to "SalesOrders."
 exec sp_rename 'Sales.Orders', 'SalesOrders';
+
