@@ -66,8 +66,9 @@ create schema Sales
 go
 
 alter schema Sales
-transfer dpo.Orders
+transfer dbo.Orders
 
 -- 13-Rename the "Orders" table to "SalesOrders."
 exec sp_rename 'Sales.Orders', 'SalesOrders';
+
 
